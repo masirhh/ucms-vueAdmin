@@ -26,7 +26,7 @@
         :on-success="onsuccess"
         :on-error="onerror"
         name="img"
-        action="http://localhost:8082/ucms/file/uphome"
+        action="http://localhost:18082/ucms/file/uphome"
         :multiple="false"
         :show-file-list="false"
       >

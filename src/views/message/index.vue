@@ -66,7 +66,7 @@ export default {
             opreated: 1
           }
         }).then(res => {
-          if ("content" in res) {
+          if (res ==true) {
             this.$message({
               type: "success",
               message: "发送成功!"
