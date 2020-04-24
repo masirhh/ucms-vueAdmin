@@ -136,6 +136,18 @@ export const constantRoutes = [{
       }
     }]
   },
+  {
+    path: '/file',
+    component: Layout,
+    children: [{
+      path: 'filelist',
+      component: () => import("@/views/files"),
+      meta: {
+        title: '文件管理',
+        icon: 'tree'
+      }
+    }]
+  },
 
   // 404 page must be placed at the end !!!
   {
@@ -154,8 +166,6 @@ const createRouter = () => new Router({
 })
 
 const router = createRouter()
-
-
 
 // Detail see: https://github.com/vuejs/vue-router/issues/1234#issuecomment-357941465
 export function resetRouter() {

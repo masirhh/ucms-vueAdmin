@@ -62,7 +62,7 @@ export default {
     onsuccess() {
       this.$message.success("修改成功");
     },
-    onerrror() {
+    onerror() {
       this.$message.error("修改失败");
     }
   }
